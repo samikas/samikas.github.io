@@ -1,0 +1,461 @@
+
+
+
+
+
+/* MUOKKAA HEADER KUVAN 
+KORKEUS PIENEMMILLÄ RUUTUKOKOILLA 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
+
+
+body{
+    color:#C3C3C3;
+}
+
+.page-content{
+    background-color: #151515;
+    position: relative;
+    margin-top:-20px;
+    
+   
+}    
+
+.header{
+    background-image: url(../img/keyboard-comp.png); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top:5%;
+    z-index:2; 
+    text-shadow: 0 0 20px black;
+}
+
+.content-header{
+    padding-top: 30px;
+}
+
+.icon{
+    font-size: 3.5em;
+    margin-bottom:-10px;
+}
+
+.icon-small{
+    font-size: 2em;
+    margin-bottom:-10px;
+}
+
+.link-logo2{
+    margin-bottom:100px;
+}
+
+
+    /* Slider */
+    .slider{
+        display: none;
+    }
+
+.inline{
+    display: inline-block;
+}
+
+.contact{
+    position: relative;
+    top: -0.5em;
+    padding-left: 0.3em;
+}
+
+.name{
+    /* padding-bottom: 1em; */
+    font-size: 2em;
+}
+
+.link-logo1{
+    height:4em;
+    width:auto;
+    margin:auto;
+    margin-right:2em;
+    
+   
+    
+}
+
+.link-logo2{
+    height:4em;
+    width:auto;
+    margin:auto;    
+    margin-right:2em;
+    
+    
+}
+
+.link-spacing {
+    padding-bottom: 100px;
+   
+}
+
+
+
+
+
+
+.centered-col{
+float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.portrait{
+    background-image: url(../img/omakuva.jpg);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    height:300px;
+    max-width:225px; 
+    margin-top: 10px;  
+ 
+}
+
+
+.vimeo iframe{
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.carousel-div{
+    width:80%;
+}
+
+.carousel-img{
+    width:100%;
+}
+
+/* Custom colors */
+
+.blue{
+    color:#00CAFF;
+    opacity: 1;
+}
+
+.grey{
+    color:#B7B7B7;
+    text-align: center;
+}
+
+
+
+/* Ruutukoot Breakpoints*/
+
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .expertise{
+        padding-bottom: 5em;
+    }
+
+    .ind-exp{
+        padding-bottom: 3em;
+    }
+
+}  
+
+/* Isoin ruutukoko */
+@media only screen and (min-width: 768px)  {
+.expertise{
+    padding-bottom: 20em;
+}
+.ind-exp{
+    padding-bottom: 3em;
+}
+  .brand-name{
+        margin-left:10px;  
+    }
+
+    .portrait{
+        margin-left:25%;
+        margin-right:30px;
+    }
+     .about{
+        padding-bottom:200px;
+        display:inline-block;
+        text-align:left;
+        /*width:40%; 
+        margin-right: 14em;
+        margin-bottom:100px; */
+    }
+
+    .content{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Video */
+    .embed-container { 
+        position: relative; 
+        padding-bottom: 56.25%; 
+        height: 0; 
+        overflow: hidden; 
+        max-width: 900px; 
+        width:80%;
+        margin:auto;
+       
+    } 
+    .embed-container iframe, 
+    .embed-container object, 
+    .embed-container embed 
+    { position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+    }
+
+
+
+
+
+
+    /* Soundcloud */
+    .soundcloud { 
+        position: relative; 
+        padding-bottom: 56.25%; 
+        height: 0; 
+        overflow: hidden; 
+        max-width: 800px; 
+        width:80%;
+        
+        margin:auto;
+        padding-bottom:-200px
+       
+    } 
+    .soundcloud iframe, 
+    .soundcloud object, 
+    .soundcloud embed 
+    { position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 60%; 
+        margin-bottom:-200px;
+    }
+    
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+.about{
+        /*width:35%; 
+        margin-right:13em*/
+        display:inline-block;
+        text-align:left;
+        
+    }
+     .portrait{
+        width: 200px;
+        margin-left: 20%;
+        margin-right:30px;
+    }
+  
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.about{
+        width:42%; 
+        display:inline-block;
+        text-align:left;
+        margin-left:-15%;
+        
+    }
+     .portrait{
+        min-width: 190px;
+        margin-left: 17%;
+        width:25%;
+        float:left;
+        margin-right:30px;
+    }
+}
+
+
+/* Keskikoko */
+@media only screen and (max-width: 767px){
+   
+    
+    .col-own{
+        width:70%;
+        margin: auto;
+    }
+
+    .brand-name{
+        margin-left:-5px; 
+    }
+
+    .portrait{
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 150px;
+        margin-bottom:-30px;
+
+    }
+    .about{
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom:50px;      
+    }
+
+    /* Video */
+    .embed-container { 
+        position: relative; 
+        padding-bottom: 56.25%; 
+        height: 0; 
+        overflow: hidden; 
+        max-width: 800px; 
+        width:80%;
+        margin:auto;
+       
+    } 
+    .embed-container iframe, 
+    .embed-container object, 
+    .embed-container embed 
+    { position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+    }
+}
+/* Pienin ruutukoko */
+@media only screen and (max-width: 400px){
+    
+    .brand-name{
+       display:none;
+        
+    }
+
+
+    /* Video */
+    .embed-container { 
+        position: relative; 
+        padding-bottom: 56.25%; 
+        height: 0; 
+        overflow: hidden; 
+        max-width: 800px; 
+        width:80%;
+        margin:auto;
+       
+    } 
+    .embed-container iframe, 
+    .embed-container object, 
+    .embed-container embed 
+    { position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+    }
+
+
+    /* Soundcloud */
+    .soundcloud { 
+        position: relative; 
+        padding-bottom: 56.25%; 
+        height: 0; 
+        overflow: hidden; 
+        max-width:800px;
+        min-width: 200px; 
+        width:80%;
+        margin:auto;
+        padding-bottom:-200px
+       
+    } 
+    .soundcloud iframe, 
+    .soundcloud object, 
+    .soundcloud embed 
+    { position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 60%; 
+        margin-bottom:-200px;
+    }
+
+}
+
+
+
+
+
+
+
+/* Image carousel style*/
+
+/* jssor slider bullet navigator skin 01 css */
+        /*
+        .jssorb01 div           (normal)
+        .jssorb01 div:hover     (normal mouseover)
+        .jssorb01 .av           (active)
+        .jssorb01 .av:hover     (active mouseover)
+        .jssorb01 .dn           (mousedown)
+        */
+        .jssorb01 {
+            position: absolute;
+        }
+        .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 12px;
+            height: 12px;
+            border-radius: 10px;
+            filter: alpha(opacity=70);
+            opacity: .7;
+            overflow: hidden;
+            cursor: pointer;
+            
+        }
+        .jssorb01 div { background-color: #00CAFF; }
+        .jssorb01 div:hover, .jssorb01 .av:hover { background-color: #0081A2; }
+        .jssorb01 .av { background-color: #151515; }
+        .jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+        /* jssor slider arrow navigator skin 03 css */
+        /*
+        .jssora03l                  (normal)
+        .jssora03r                  (normal)
+        .jssora03l:hover            (normal mouseover)
+        .jssora03r:hover            (normal mouseover)
+        .jssora03l.jssora03ldn      (mousedown)
+        .jssora03r.jssora03rdn      (mousedown)
+        */
+        .jssora03l, .jssora03r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+            background: url('../slider.jquery/img/a22.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora03l { background-position: -3px -33px; }
+        .jssora03r { background-position: -63px -33px; }
+        .jssora03l:hover { background-position: -123px -33px; }
+        .jssora03r:hover { background-position: -183px -33px; }
+        .jssora03l.jssora03ldn { background-position: -243px -33px; }
+        .jssora03r.jssora03rdn { background-position: -303px -33px; }
+
+
+
+
+
