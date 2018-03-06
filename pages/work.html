@@ -1,130 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="icon" href="../img/favicon.png" sizes="16x16" type="image/png">
-    
-    <title>Sami Kaskinen</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="../bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    
-  </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../img/favicon.png" sizes="16x16" type="image/png">
+  <title>Sami Kaskinen</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="../bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="../index.html"><img class="navbar-brand" style="padding: inherit;" src="../img/favicon.png"><a class="navbar-brand" href="../index.html"> Sami Kaskinen</a>
+        <a href="../index.html"><img class="navbar-brand" style="padding: inherit;" src="../img/favicon.png"><a class="navbar-brand" href="../index.html"> Sami Kaskinen</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../index.html">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="active"><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
- 
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="../index.html">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="active"><a href="work.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  </nav>
+  <div class="page-content">
+    <div class="header">
+      <div class="header-text">
+        <h1 class="blue">My work</h1>
+        <h1 class="blue"></h1>
+      </div>
     </div>
-  </div>
-</nav>
-<div class="page-content">
-    <div class="header"> 
-            <div class="header-text">      
-                <h1 class="blue">My work</h1>
-                <h1 class="blue"></h1>
-            </div>
+    <br/>
+    <br/>
+    <div class="grey">
     </div>
-    
-    
-     <!-- <h1 class="blue text-center content-header">Creative skill set</h1> -->
-      <br/>
-      <br/>
-      
-      <div class="grey">
-          
-      
-
-            
-        </div>
-<div class='embed-container'>
-  <iframe src='https://player.vimeo.com/video/116468740' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen>
-  </iframe></div>
-
-       
+    <div class='embed-container'>
+      <iframe src='https://player.vimeo.com/video/116468740' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+      </iframe>
+    </div>
     <script type="text/javascript" src="../slider.jquery/js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="../slider.jquery/js/jssor.slider.mini.js"></script>
     <!-- use jssor.slider.debug.js instead for debug -->
     <script>
-        jQuery(document).ready(function ($) {
-            
-            var jssor_1_options = {
-              $AutoPlay: true,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-            
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-        });
-    </script>
+      jQuery(document).ready(function ($) {
 
+        var jssor_1_options = {
+          $AutoPlay: true,
+          $ArrowNavigatorOptions: {
+            $Class: $JssorArrowNavigator$
+          },
+          $BulletNavigatorOptions: {
+            $Class: $JssorBulletNavigator$
+          }
+        };
+
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+      });
+    </script>
     <div class="slider">
-    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 700px; height: 400px; overflow: hidden; visibility: hidden; 
+      <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 700px; height: 400px; overflow: hidden; visibility: hidden; 
     ;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-            <div style="position:absolute;display:block;background:url('../slider.jquery/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+          <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+          <div style="position:absolute;display:block;background:url('../slider.jquery/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 700px; height: 400px; overflow: hidden;
         -moz-user-select: none;
         -webkit-user-select: none;
         user-select: none;">
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="../img/4logo.jpg" />
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="../img/feature-graffa.jpg" />
-            </div>
-        
+          <div data-p="112.50" style="display: none;">
+            <img data-u="image" src="../img/4logo.jpg" />
+          </div>
+          <div data-p="112.50" style="display: none;">
+            <img data-u="image" src="../img/feature-graffa.jpg" />
+          </div>
+
         </div>
         <!-- Bullet Navigator -->
         <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;" data-autocenter="1">
-            <div data-u="prototype" style="width:12px;height:12px;"></div>
+          <div data-u="prototype" style="width:12px;height:12px;"></div>
         </div>
         <!-- Arrow Navigator -->
         <span data-u="arrowleft" class="jssora03l" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
         <span data-u="arrowright" class="jssora03r" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
-    </div>
+      </div>
     </div>
     <div class="soundcloud">
-      <iframe class="center-block" style="padding-top:2em;" scrolling="no" frameborder="no" 
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/19306212&amp;color=00caff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
-    </div>          
-      
-    
-    
+      <iframe class="center-block" style="padding-top:2em;" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/19306212&amp;color=00caff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-  </body>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+</body>
 </html>
