@@ -1,0 +1,165 @@
+<html ng-app="MyApp">
+<head>
+	<title>Näyttötyö</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/ui-lightness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div ng-controller="AppCtrl">
+	<div id="mainW">
+		<div class="info">
+			<div id="info-header">
+				<h4>{{infoHeader}}</h4>			
+				<h2>{{infoHeader2}}</h2>
+			</div>
+			<div ng-show="showFirst" id="first-page">
+				<p id="info-text">{{infoHelp}}</p>
+				<a href=""><img ng-click="toggle()" id="arrow-icon" src="img/arrow-icon.png"/></a>
+				<div id="graph">
+					<div class="first-block">
+						<h3 class="graph-header">{{infoGrphHeader}}</h3>
+						<div class=" box green-box">
+							<h3>{{infoGrphBox}}</h3>
+						</div>					
+						<img class="plus" src="img/plus.png"/>
+						<div class="box green-box2">
+							<h3>{{infoGrphBox2}}</h3> 
+						</div>
+					</div>
+					<div>
+						<img id="arrow"src="img/arrow2.png"/>
+					</div>				
+					<div class="first-block">
+						<h3 class="graph-header">{{infoGrphHeader2}}</h3>
+						<div class=" box blue-box">
+							<h3>{{infoGrphBox3}}</h3>
+						</div>							
+						<img class="plus" src="img/plus.png"/>
+						<div class="box blue-box">
+							<h3>{{infoGrphBox4}}</h3>	
+						</div>
+						<img class="plus" src="img/plus.png"/>
+						<div class="box yellow-box">
+							<h3>{{infoGrphBox5}} </h3>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Second page -->
+			<div ng-show="showSec" id="sec-page">
+				<p class="sec-info-text">{{secondHelp}}</p>
+				<div>
+					<div class="box black-box">
+						<h3>{{infoGrphBox5}}</h3>
+					</div>
+					<div class="vertical-line1"></div>
+				</div>
+				<p class="sec-info-text2" >{{secondHelp2}}</p>				
+				<div id="hr-line"></div>
+				<div class="vertical-line2" ></div>
+				<div class="vertical-line3" ></div>
+				<div class="vertical-line4" ></div>
+				<div class="vertical-line5" ></div>						
+				<div ng-class="{'quiz-box-last':$last}" ng-repeat="content in quizContents" class="quiz-box">			
+					<div class="quiz-box-inner" >
+						<div class="quiz-box-inner-in" data-drop="true" ng-class="dragBox{{$index}}" jqyoui-droppable="{multiple: true, 
+							onDrop: 'dropCallback{{$index}}'}"
+							data-jqyoui-options="{revert: 'revertCard', hoverClass: 'ui-state-active',
+								tolerance: 'pointer'}" >
+							<div ng-show="showComplete{{$index}}" class="quiz-box-complete">
+								<img class="minus minus{{$index}}" src="img/minus.png"/>
+								<img class="plus-grey plus-grey{{$index}}" src="img/plus-grey.png"/>
+								<h3> {{content.header}}</h3>
+							</div>
+						</div>				
+					</div>							
+					<div class="quiz-box-lower">
+						<p>{{content.content[0].first}}</p>
+						<p class="red">{{content.content[1].second}}</p>
+						<p>{{content.content[2].third}}</p>								
+					</div>
+				</div>
+				<div class="drag-div">
+					<div class="drag-box-under">
+						<div class="drag-box dragBox dragBox0"    ng-show="showDrag0"  data-drag="true" 
+						data-jqyoui-options="{revert: 'revertCard',
+												appendTo: 'body',
+												zIndex: 1}"
+						jqyoui-draggable="{index: 0,
+								placeholder:keep,
+								animate:true
+								}">
+							<h3> {{quizContents[0].header}}</h3> 
+						</div>
+					</div>
+					<div class="drag-box-under">
+						<div class="drag-box dragBox dragBox1"  ng-show="showDrag1" data-drag="true" 
+						data-jqyoui-options="{revert: 'invalid',
+												appendTo: 'body',
+												zIndex: 1
+												}"
+						jqyoui-draggable="{index: 1,
+								placeholder:true,
+								animate:true
+								}">
+							<h3>{{quizContents[1].header}}</h3>		
+						</div>
+					</div>
+					<div class="drag-box-under">
+						<div class="drag-box dragBox dragBox2"  ng-show="showDrag2" data-drag="true" 
+						data-jqyoui-options="{revert: 'invalid',
+												appendTo: 'body',
+												zIndex: 1,
+												placeholder:true
+												}"
+						jqyoui-draggable="{index: 2,
+								placeholder:true,
+								animate:true
+								}">
+							<h3>{{quizContents[2].header}}</h3>		
+						</div>
+					</div>							
+					<div class="drag-box-under drag-box-under-last">
+						<div class="drag-box drag-box-last dragBox dragBox3" ng-show="showDrag3" data-drag="true" 
+						data-jqyoui-options="{revert: 'invalid',
+												appendTo: 'body',
+												zIndex: 1
+												}"
+						jqyoui-draggable="{index: 3,
+								placeholder:true,
+								animate:true,
+								placeholder: 'keep'
+								}">								
+							<h3>{{quizContents[3].header}}</h3>		
+						</div>
+					</div>
+				</div>							
+				<a href=""><img ng-show="showArrowEnd" ng-click="reload()" id="arrowEnd" src="img/arrow-icon.png"/></a>
+				<div ng-show="showQuiz" id="quiz">
+					<div id="quiz-upper">
+						<p>{{questions[quizLevel].question}}</p>
+						<div ng-show="showtrueFalse" id="true-false">
+							<button ng-click="checkTrue()">TRUE</button>
+							<span> OR <span>
+							<button ng-click="checkFalse()">FALSE</button>
+						</div>
+					</div>
+					<div id="quiz-lower">	
+						<p ng-show="showAnswerT">{{questions[quizLevel].answers[0].true}}</p>
+						<p ng-show="showAnswerF">{{questions[quizLevel].answers[1].false}}</p>
+						<a href=""><img ng-show="showArrow" ng-click="changeQuiz()" id="arrow2" src="img/arrow-icon.png"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+<script src="js/angular-dragdrop.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
