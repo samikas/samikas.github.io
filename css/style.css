@@ -6,6 +6,7 @@ body {
     background-color: #151515;
     position: relative;
     margin-top: -20px;
+    color: white;
 }
 
 .header {
@@ -96,6 +97,11 @@ body {
     height: 300px;
     max-width: 225px;
     margin-top: 10px;
+}
+
+.movie-img {
+    border: white solid 0.2rem;
+    width: 60%;
 }
 
 .vimeo iframe {
